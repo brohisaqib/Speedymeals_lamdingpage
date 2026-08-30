@@ -37,6 +37,13 @@ const services: ServiceItem[] = [
     description: "Skip the line and fees. Order ahead and grab it on the go.",
     iconBgClass: "bg-secondary-container text-secondary",
   },
+  {
+    id: "medicine",
+    icon: "medication",
+    title: "Medicine Delivery",
+    description: "Get your prescriptions and OTC medicines delivered to your doorstep quickly.",
+    iconBgClass: "bg-tertiary-container text-tertiary",
+  },
 ];
 
 export default function ServicesSection() {
@@ -53,7 +60,7 @@ export default function ServicesSection() {
           <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {services.map((service) => (
             <div
               key={service.id}

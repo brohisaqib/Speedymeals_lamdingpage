@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Hanken_Grotesk } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-bricolage",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
 });
 
-const hanken = Hanken_Grotesk({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-hanken",
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${hanken.variable} scroll-smooth h-full antialiased`}
+      className={`${poppins.variable} ${roboto.variable} scroll-smooth h-full antialiased`}
     >
       <head>
         <link
